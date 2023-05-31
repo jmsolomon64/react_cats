@@ -36,3 +36,29 @@ of Cat components.
 Download and impliment Tailwindcss into the
 project. Read through documentation to make
 the Cat component visually appealing.
+
+## Challenge 4
+
+### 5/29/2023 5:38pm
+
+---
+
+Create a component with the help of tailwind
+and bootstrap that will update an exisitng
+cat's information. Research state to ensure
+that the changes are reflected in the parent
+component.
+
+## Challenge 5
+
+### 30/05/2023
+
+---
+
+Create a component to add a new cat to the list.
+Change Edit Cat component to have a drop down
+for favorite colors. The drop down should hold
+all of the colors that React can use in the style
+tag so that the cats favorite color is used for
+the background color of their card rather than
+displaying the color as text.

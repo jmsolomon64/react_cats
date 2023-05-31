@@ -1,12 +1,21 @@
 import React from "react";
+import EditCat from "./EditCat";
 
 function Cat(props) {
-    return ( 
-        <div href="#" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 mx-5">
-            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.name}</h5>
-            <p className="font-normal text-gray-700 dark:text-gray-400">{props.favoriteColor}.</p>
+    
+    return (
+      <div className="card m-2">
+        <img className="card-img-top h-50 d-inline-block" src={props.img} alt="Kitty pic" />
+        <div className="card-body text-center" style={{background: props.favoriteColor}}>
+          <h3>{props.name}</h3>
+          <hr className="my-2" />
+          <p className="card-text">{props.furPattern}</p>
+          <hr className="my-2" />
+          <EditCat {...props} />
         </div>
+      </div>
     );
-}
+  }
+  
 
 export default Cat
