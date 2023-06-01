@@ -7,7 +7,7 @@ const navigation = [
 
 
   { name: 'Cats', href: '/cats', current: true },
-  { name: 'Rabbits', href: '/rabbits', current: false },
+  { name: 'Cat Terms', href: '/vocab', current: false },
   { name: 'Dogs', href: '/dogs', current: false }
 ]
 
@@ -85,7 +85,7 @@ export default function Header(props) {
           </>
         )}
       </Disclosure>
-      <div className="bg-slate-600 min-h-screen">{props.children}</div>
+      <div className="bg-slate-600 min-h-screen p-5">{props.children}</div>
     </>
   )
 }
