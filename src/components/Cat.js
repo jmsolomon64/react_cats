@@ -1,5 +1,4 @@
 import React from "react";
-import EditCat from "./EditCat";
 
 function Cat(props) {
     
@@ -11,7 +10,7 @@ function Cat(props) {
           <hr className="my-2" />
           <p className="card-text">{props.furPattern}</p>
           <hr className="my-2" />
-          <EditCat {...props} />
+          {props.editCat}
         </div>
       </div>
     );

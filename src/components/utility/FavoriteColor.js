@@ -150,7 +150,7 @@ function FavoriteColor(props) {
       
     return (
         <>
-            <label for="inputFavoriteColor">Favorite Color</label>
+            <label htmlFor="inputFavoriteColor">Favorite Color</label>
             <select id="inputFavoriteColor" value={color} onChange={(e) => {
                 setColor(e.target.value);
                 props.getFavColor(e.target.value);

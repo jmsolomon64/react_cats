@@ -22,7 +22,7 @@ function EditCat(props) {
             Edit This Cat
             </button>
 
-            <div className="modal fade" id={modalId} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={modalId} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
@@ -38,12 +38,12 @@ function EditCat(props) {
                                 props.updateCat(props.id, name, furPattern, favoriteColor);
                             }}>
                                 <div className="form-group">
-                                    <label for="inputName">Name</label>
+                                    <label htmlFor="inputName">Name</label>
                                     <input type="text" className="form-control" id="inputName" aria-describedby="nameHelp" value={name} onChange={(e) => {setName(e.target.value);}}/>
                                     <small id="nameHelp" className="form-text text-muted">The name of the cat goes here!</small>
                                 </div>
                                 <div className="form-group">
-                                    <label for="inputFurPattern">Fur Pattern</label>
+                                    <label htmlFor="inputFurPattern">Fur Pattern</label>
                                     <input type="text" className="form-control" id="inputFurPattern" value={furPattern}
                                     onChange={(e) => {setFurPattern(e.target.value);}}/>
                                 </div>
