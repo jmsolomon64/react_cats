@@ -25,14 +25,11 @@ function Dictionary() {
       ]);
 
     useEffect(() => {
-        console.log(`${word} is the word`);
         if (word === '') {
             setFoundWords(vocabWords);
-            console.log('Here is all of the words.');
         } else {
-            console.log('I am inside of the else')
             const filteredWords = vocabWords.filter((vocab) => //creates new array from filtered elements
-                vocab.name.includes(word) //filter for elements
+                vocab.name.toLowerCase().includes(word.toLowerCase()) //filter for elements
             );
             setFoundWords(filteredWords); //set filtered words to foundWords state
         }
